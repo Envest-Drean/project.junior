@@ -77,8 +77,8 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
 }
-.light #switch {
-animation: slide-in 0.5s forwards;
+.light #switch button {
+  animation: slide-in 0.5s forwards;
 }
 #switch span {
   display: block;
@@ -149,15 +149,17 @@ footer {
   :root {
     --bg-url: url(./assents/bg-desktop.jpg);
   }
-      .light {
-      --bg-url: url(./assents/bg-desktop-light.jpg);
-    }
+  .light {
+    --bg-url: url(./assents/bg-desktop-light.jpg);
+  }
 }
 
-@keyframes slide-in{
+@keyframes slide-in {
   from {
-      left 0;}
+    left: 0;
+  }
 
-  to{
-      left 50%;}
+  to {
+    left: 50%;
+  }
 }
